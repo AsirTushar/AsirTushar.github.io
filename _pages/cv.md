@@ -9,7 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+[Download File Here] (https://AsirTushar.github.io/files/cv.pdf)
+
+<!--Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 * M.S. in Jekyll, GitHub University, 2014
