@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Download File Here] (https://AsirTushar.github.io/files/cv.pdf)
+[Download File Here](https://AsirTushar.github.io/files/cv.pdf)
 
 <!--Education
 ======
