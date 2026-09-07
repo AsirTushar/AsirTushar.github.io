@@ -1,4 +1,4 @@
-import { ArrowUpRight, BookOpen } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 type PageName = "home" | "research" | "teaching" | "talks" | "cv";
 
@@ -59,13 +59,5 @@ export function PageIntro({ number, label, title, intro }: {
       <h1>{title}</h1>
       <p>{intro}</p>
     </section>
-  );
-}
-
-export function ExploreLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <a className="explore-link" href={href}>
-      {children} <ArrowUpRight size={16} aria-hidden="true" />
-    </a>
   );
 }

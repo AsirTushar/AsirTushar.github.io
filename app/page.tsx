@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { ArrowUpRight, Mail, MapPin } from "lucide-react";
-import { ExploreLink, SiteFooter, SiteHeader } from "./components";
+import { ArrowUpRight, Mail } from "lucide-react";
+import { SiteFooter, SiteHeader } from "./components";
 
 export const metadata: Metadata = { title: "Asir Intesar Tushar | Academic Website" };
 
@@ -10,21 +10,32 @@ export default function Home() {
       <SiteHeader current="home" />
       <section className="hero section-shell">
         <div className="hero-copy">
-          <p className="eyebrow">Bayesian statistics · Computational mathematics</p>
-          <h1>Asir Intesar<br /><em>Tushar</em></h1>
+          <h1>
+            Asir Intesar
+            <br />
+            <em>Tushar <small lang="bn">(তুষার)</small></em>
+          </h1>
           <p className="hero-role">
             Ph.D. Candidate in Mathematics
             <span>University of Tennessee, Knoxville</span>
           </p>
           <p className="hero-intro">
-            I develop Bayesian computational methods for geometric
-            reconstruction from noisy point-cloud data, with an emphasis on
-            tailored Markov chain Monte Carlo algorithms and uncertainty
-            quantification. I also work on Bayesian models for sensor-derived
-            animal-health data.
+            I am Asir Intesar Tushar, a Ph.D. candidate in Mathematics at the
+            University of Tennessee, Knoxville. I am a member of the{` `}
+            <a href="https://math.utk.edu/labs/sgouralis/" target="_blank" rel="noreferrer">
+              Sgouralis Research Group
+            </a>{` `}
+            under the direction of Dr. Ioannis Sgouralis, where I develop
+            Bayesian methods and Markov chain Monte Carlo algorithms for curve
+            reconstruction and point-cloud analysis. I also work on
+            probabilistic classification methods for sensor-derived
+            animal-health data in precision livestock farming. Before beginning
+            my doctoral studies at UTK, I earned both my B.S. and M.S. in
+            Mathematics from the University of Dhaka and served as a Lecturer
+            at Ahsanullah University of Science and Technology.
           </p>
           <div className="hero-actions">
-            <a className="button button-dark" href="mailto:aintesar@tennessee.edu">
+            <a className="button button-dark" href="mailto:aintesar@vols.utk.edu">
               <Mail size={17} aria-hidden="true" /> Email me
             </a>
             <a className="button button-light" href="https://arxiv.org/abs/2608.26490" target="_blank" rel="noreferrer">
@@ -33,31 +44,25 @@ export default function Home() {
           </div>
           <div className="home-contact" aria-label="Contact and professional profiles">
             <span>Contact</span>
-            <a href="mailto:aintesar@tennessee.edu">aintesar@tennessee.edu</a>
-            <a href="https://math.utk.edu/people/asir-intesar-tushar/" target="_blank" rel="noreferrer">
-              UTK profile <ArrowUpRight size={14} aria-hidden="true" />
-            </a>
+            <a href="mailto:aintesar@vols.utk.edu">aintesar@vols.utk.edu</a>
             <a href="https://bd.linkedin.com/in/asir-intesar-tushar-0454801ba" target="_blank" rel="noreferrer">
               LinkedIn <ArrowUpRight size={14} aria-hidden="true" />
             </a>
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=WeuT6EoAAAAJ" target="_blank" rel="noreferrer">
+              Google Scholar <ArrowUpRight size={14} aria-hidden="true" />
+            </a>
           </div>
         </div>
-        <aside className="research-index" aria-label="Research profile">
-          <div className="index-topline"><span>Research profile</span><span>UTK · 2026</span></div>
-          <div className="monogram" aria-hidden="true">AIT</div>
-          <div className="index-grid">
-            <span>Bayesian inference</span><span>MCMC</span>
-            <span>Point clouds</span><span>Uncertainty</span>
-          </div>
-          <div className="index-location"><MapPin size={16} aria-hidden="true" /> Knoxville, Tennessee</div>
-        </aside>
-      </section>
-      <section className="home-directory">
-        <div className="section-shell directory-grid">
-          <article><span>01</span><h2>Research</h2><p>Current projects, research interests, and publications.</p><ExploreLink href="/research/">Explore research</ExploreLink></article>
-          <article><span>02</span><h2>Teaching</h2><p>Courses taught and additional instructional experience.</p><ExploreLink href="/teaching/">View teaching</ExploreLink></article>
-          <article><span>03</span><h2>Talks</h2><p>Selected conference talks and academic presentations.</p><ExploreLink href="/talks/">View talks</ExploreLink></article>
-        </div>
+        <figure className="portrait-card">
+          <img
+            src="/asir-intesar-tushar.jpg"
+            alt="Asir Intesar Tushar standing beside a waterfall"
+          />
+          <figcaption>
+            <span>Asir Intesar Tushar</span>
+            <span>Knoxville, Tennessee</span>
+          </figcaption>
+        </figure>
       </section>
       <SiteFooter />
     </main>

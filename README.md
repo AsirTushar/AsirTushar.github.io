@@ -30,13 +30,10 @@ The content is organized by page:
 - CV summary and PDF link: `app/cv/page.tsx`
 - Shared navigation and footer: `app/components.tsx`
 - Colors and layout: `app/globals.css`
+- Homepage photograph: `public/asir-intesar-tushar.jpg`
 
 ## Add or update the full CV
 
 Name the PDF `Asir_Intesar_Tushar_CV.pdf` and place it inside the `public` folder. Replacing that file later updates the full CV without requiring changes to the CV page.
 
-Before publishing, consider adding:
-
-- a verified Google Scholar or ORCID link;
-- a professional portrait if desired;
-- any course materials you want to make public.
+Before publishing, consider adding any course materials you want to make public.
