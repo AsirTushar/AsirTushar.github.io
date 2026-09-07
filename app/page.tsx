@@ -19,27 +19,43 @@ export default function Home() {
             Ph.D. Candidate in Mathematics
             <span>University of Tennessee, Knoxville</span>
           </p>
-          <p className="hero-intro">
-            I am Asir Intesar Tushar, a Ph.D. candidate in Mathematics at the
-            University of Tennessee, Knoxville. I am a member of the{` `}
-            <a href="https://math.utk.edu/labs/sgouralis/" target="_blank" rel="noreferrer">
-              Sgouralis Research Group
+          <p className="hero-affiliation">
+            I am advised by{` `}
+            <a
+              href="https://math.utk.edu/people/ioannis-sgouralis/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Dr. Ioannis Sgouralis
             </a>{` `}
-            under the direction of Dr. Ioannis Sgouralis, where I develop
-            Bayesian methods and Markov chain Monte Carlo algorithms for curve
-            reconstruction and point-cloud analysis. I also work on
-            probabilistic classification methods for sensor-derived
-            animal-health data in precision livestock farming. Before beginning
-            my doctoral studies at UTK, I earned both my B.S. and M.S. in
-            Mathematics from the University of Dhaka and served as a Lecturer
-            at Ahsanullah University of Science and Technology.
+            and am a member of the{` `}
+            <a
+              href="https://math.utk.edu/labs/sgouralis/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Sgouralis Research Group
+            </a>
+            .
+          </p>
+          <p className="hero-intro">
+            My academic interests lie broadly at the intersection of Bayesian
+            statistics, statistical learning, scientific computing, and data
+            analysis. I am interested
+            in developing statistical and computational methods for learning
+            from complex and uncertain data, with applications across science
+            and engineering. Alongside my research, I have extensive experience
+            teaching undergraduate mathematics and enjoy supporting students in
+            developing confidence and strong mathematical reasoning. Before
+            beginning my doctoral studies at UTK, I earned both my B.S. and M.S.
+            in Mathematics from the University of Dhaka and served as a Lecturer
+            at Ahsanullah University of Science and Technology. Outside of
+            academics, I enjoy playing football (soccer), hiking, and table
+            tennis.
           </p>
           <div className="hero-actions">
             <a className="button button-dark" href="mailto:aintesar@vols.utk.edu">
               <Mail size={17} aria-hidden="true" /> Email me
-            </a>
-            <a className="button button-light" href="https://arxiv.org/abs/2608.26490" target="_blank" rel="noreferrer">
-              Read the preprint <ArrowUpRight size={17} aria-hidden="true" />
             </a>
           </div>
           <div className="home-contact" aria-label="Contact and professional profiles">

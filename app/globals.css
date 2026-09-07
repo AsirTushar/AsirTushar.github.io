@@ -130,6 +130,20 @@ a { color: inherit; text-decoration: none; }
   font-weight: 800;
 }
 .hero-role span { color: var(--muted); font-weight: 500; }
+.hero-affiliation {
+  max-width: 720px;
+  margin: 0 0 18px;
+  color: #4f5152;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.hero-affiliation a {
+  border-bottom: 1px solid currentColor;
+  color: var(--blue);
+  font-weight: 700;
+}
+.hero-affiliation a:hover,
+.hero-affiliation a:focus-visible { color: var(--orange); }
 .hero-intro {
   max-width: 720px;
   margin: 0;
