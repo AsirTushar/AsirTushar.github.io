@@ -1,6 +1,6 @@
 # Asir Intesar Tushar — Academic Website
 
-A research-first academic portfolio built for GitHub Pages. Research, publications, teaching, talks, honors, and contact links are available from the persistent top navigation.
+A multi-page academic portfolio built for GitHub Pages. The persistent top navigation opens separate Home, Research, Teaching, Talks, and CV pages. Publications are included on the Research page, while contact links remain on the Home page.
 
 ## Publish at `username.github.io`
 
@@ -21,13 +21,22 @@ npx next dev
 
 ## Update the content
 
-Most content is in `app/page.tsx`. Colors and layout are in `app/globals.css`.
+The content is organized by page:
+
+- Home: `app/page.tsx`
+- Research and publications: `app/research/page.tsx`
+- Teaching: `app/teaching/page.tsx`
+- Talks: `app/talks/page.tsx`
+- CV summary and PDF link: `app/cv/page.tsx`
+- Shared navigation and footer: `app/components.tsx`
+- Colors and layout: `app/globals.css`
+
+## Add or update the full CV
+
+Name the PDF `Asir_Intesar_Tushar_CV.pdf` and place it inside the `public` folder. Replacing that file later updates the full CV without requiring changes to the CV page.
 
 Before publishing, consider adding:
 
-- your CV PDF under `public/Asir_Intesar_Tushar_CV.pdf`;
 - a verified Google Scholar or ORCID link;
 - a professional portrait if desired;
 - any course materials you want to make public.
-
-After adding a CV, add a navigation link with `href="/Asir_Intesar_Tushar_CV.pdf"`.
