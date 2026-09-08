@@ -25,6 +25,9 @@ The content is organized by page:
 
 - Home: `app/page.tsx`
 - Research and publications: `app/research/page.tsx`
+- Point-cloud project: `app/research/point-cloud/page.tsx`
+- Dairy-cow health project: `app/research/mastitis/page.tsx`
+- Black-Scholes project: `app/research/black-scholes/page.tsx`
 - Teaching: `app/teaching/page.tsx`
 - Talks: `app/talks/page.tsx`
 - CV summary and PDF link: `app/cv/page.tsx`
@@ -34,6 +37,6 @@ The content is organized by page:
 
 ## Add or update the full CV
 
-Name the PDF `Asir_Intesar_Tushar_CV.pdf` and place it inside the `public` folder. Replacing that file later updates the full CV without requiring changes to the CV page.
+The current PDF is included as `public/Asir_Intesar_Tushar_CV.pdf`. Replacing that file later updates the full CV without requiring changes to the CV page.
 
 Before publishing, consider adding any course materials you want to make public.

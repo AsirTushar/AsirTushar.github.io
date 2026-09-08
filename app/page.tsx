@@ -54,8 +54,8 @@ export default function Home() {
             tennis.
           </p>
           <p className="job-market-note">
-          I am currently on the academic job market and seeking postdoctoral
-          positions beginning in Summer or Fall 2027.
+            I am currently on the academic job market and seeking postdoctoral
+            positions beginning in Summer or Fall 2027.
           </p>
           <div className="hero-actions">
             <a className="button button-dark" href="mailto:aintesar@vols.utk.edu">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ExternalLink } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { PageIntro, SiteFooter, SiteHeader } from "../components";
 
 export const metadata: Metadata = {
@@ -28,6 +28,33 @@ const publications = [
   },
 ];
 
+const projects = [
+  {
+    number: "01",
+    title: "Bayesian curve reconstruction from point-cloud data",
+    summary:
+      "Bayesian models and tailored MCMC algorithms for recovering uncertain geometric structure from noisy, incomplete, and unordered observations.",
+    href: "/research/point-cloud/",
+    areas: "Bayesian computation · MCMC · Geometric data",
+  },
+  {
+    number: "02",
+    title: "Bayesian nonparametric modeling for dairy-cow health",
+    summary:
+      "Probabilistic classification of longitudinal sensor data for mastitis detection in precision livestock farming.",
+    href: "/research/mastitis/",
+    areas: "Bayesian nonparametrics · Classification · Animal health",
+  },
+  {
+    number: "03",
+    title: "Numerical investigation of the Black-Scholes equation",
+    summary:
+      "Numerical approximation of a nonlinear option-pricing model under varying volatility specifications.",
+    href: "/research/black-scholes/",
+    areas: "Numerical analysis · Mathematical finance · Differential equations",
+  },
+];
+
 export default function Research() {
   return (
     <main>
@@ -39,26 +66,27 @@ export default function Research() {
         intro="My work connects Bayesian modeling, computational statistics, and scientific applications where the underlying structure is only partially observed."
       />
       <section className="page-content section-shell">
-        <div className="research-grid">
-          <article className="research-card research-card-primary">
-            <div className="card-number">01</div>
-            <div>
-              <p className="card-kicker">Primary research</p>
-              <h2>Curve reconstruction and point-cloud analysis</h2>
-              <p>Fully Bayesian models for reconstructing closed curves from noisy, incomplete, or sparse point clouds, together with problem-specific MCMC algorithms and posterior uncertainty summaries.</p>
-              <div className="tag-row"><span>Bayesian computation</span><span>MCMC</span><span>Geometric data</span></div>
-            </div>
-          </article>
-          <article className="research-card">
-            <div className="card-number">02</div>
-            <div>
-              <p className="card-kicker">Collaborative research</p>
-              <h2>Probabilistic modeling for precision livestock farming</h2>
-              <p>Predictive and Bayesian nonparametric classification methods for detecting mastitis from longitudinal, sensor-derived dairy cow health data.</p>
-              <div className="tag-row"><span>Bayesian nonparametrics</span><span>Classification</span><span>Animal health</span></div>
-            </div>
-          </article>
-        </div>
+        <section className="project-index" aria-labelledby="projects-title">
+          <div className="subsection-heading">
+            <p className="eyebrow">Projects</p>
+            <h2 id="projects-title">Current and previous research.</h2>
+          </div>
+          <div className="project-list">
+            {projects.map((project) => (
+              <a className="project-card-link" href={project.href} key={project.number}>
+                <span className="project-number">{project.number}</span>
+                <div>
+                  <h3>{project.title}</h3>
+                  <p>{project.summary}</p>
+                  <span className="project-areas">{project.areas}</span>
+                </div>
+                <span className="project-details">
+                  Details <ArrowUpRight size={17} aria-hidden="true" />
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
         <div className="research-note">
           <span>Research interests</span>
           <p>Bayesian statistics · Statistical learning · Markov chain Monte Carlo · Uncertainty quantification · Bayesian nonparametrics · Data analysis</p>
