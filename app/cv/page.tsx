@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ArrowUpRight, FileText } from "lucide-react";
-import { PageIntro, SiteFooter, SiteHeader } from "../components";
+import { SiteFooter, SiteHeader } from "../components";
 
 export const metadata: Metadata = {
   title: "CV | Asir Intesar Tushar",
@@ -36,16 +36,14 @@ const highlights = [
 
 export default function CV() {
   return (
-    <main>
+    <main className="compact-page cv-page">
       <SiteHeader current="cv" />
-      <PageIntro
-        number="04"
-        label="Curriculum Vitae"
-        title="Research, teaching, and academic service."
-        intro="I am a Ph.D. candidate in mathematics at the University of Tennessee, Knoxville. My work focuses on Bayesian computational methods for geometric and sensor-derived data, alongside extensive undergraduate teaching and professional service."
-      />
+      <section className="compact-page-header section-shell">
+        <p className="eyebrow">04 · Curriculum Vitae</p>
+        <h1>Curriculum Vitae</h1>
+      </section>
 
-      <section className="page-content section-shell cv-layout">
+      <section className="compact-page-content section-shell cv-layout">
         <div className="cv-download-card">
           <FileText size={34} aria-hidden="true" />
           <div>

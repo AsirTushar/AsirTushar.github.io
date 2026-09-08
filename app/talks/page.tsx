@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PageIntro, SiteFooter, SiteHeader } from "../components";
+import { SiteFooter, SiteHeader } from "../components";
 
 export const metadata: Metadata = {
   title: "Talks | Asir Intesar Tushar",
@@ -19,13 +19,11 @@ export default function Talks() {
   return (
     <main className="talks-page">
       <SiteHeader current="talks" />
-      <PageIntro
-        number="03"
-        label="Talks"
-        title="Selected conference talks and presentations."
-        intro="Presentations on Bayesian computation, geometric reconstruction, statistical learning, and earlier work in applied mathematics."
-      />
-      <section className="page-content section-shell">
+      <section className="compact-page-header section-shell">
+        <p className="eyebrow">03 · Talks</p>
+        <h1>Talks</h1>
+      </section>
+      <section className="compact-page-content section-shell">
         <div className="talk-list">
           {talks.map((talk) => (
             <article className="talk" key={`${talk.title}-${talk.venue}`}>

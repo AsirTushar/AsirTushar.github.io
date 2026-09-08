@@ -1,48 +1,90 @@
 import type { Metadata } from "next";
-import { PageIntro, SiteFooter, SiteHeader } from "../components";
+import { SiteFooter, SiteHeader } from "../components";
 
 export const metadata: Metadata = {
   title: "Teaching | Asir Intesar Tushar",
   description: "Teaching experience and courses taught by Asir Intesar Tushar.",
 };
 
-const teachingGroups = [
-  { course: "MATH 151", name: "Mathematics for Life Sciences", terms: "Fall 2024–Fall 2026 · 7 sections" },
-  { course: "MATH 152", name: "Calculus for Life Sciences", terms: "Spring 2026 · 1 section" },
-  { course: "MATH 113", name: "Mathematical Reasoning", terms: "Fall 2023–Spring 2024 · 4 sections" },
-  { course: "MATH 123", name: "Finite Mathematics", terms: "Fall 2022–Spring 2023 · 4 sections" },
+const instructorCourses = [
+  ["MATH 151 · Mathematics for Life Sciences", "Fall 2026 · 2 sections"],
+  ["MATH 152 · Calculus for Life Sciences", "Spring 2026 · 1 section"],
+  ["MATH 151 · Mathematics for Life Sciences", "Fall 2025 · 2 sections"],
+  ["MATH 151 · Mathematics for Life Sciences", "Spring 2025 · 1 section"],
+  ["MATH 151 · Mathematics for Life Sciences", "Fall 2024 · 2 sections"],
+  ["MATH 113 · Mathematical Reasoning", "Spring 2024 · 2 sections"],
+  ["MATH 113 · Mathematical Reasoning", "Fall 2023 · 2 sections"],
+  ["MATH 123 · Finite Mathematics", "Spring 2023 · 2 sections"],
+  ["MATH 123 · Finite Mathematics", "Fall 2022 · 2 sections"],
 ];
 
 export default function Teaching() {
   return (
-    <main>
+    <main className="compact-page teaching-page">
       <SiteHeader current="teaching" />
-      <PageIntro
-        number="02"
-        label="Teaching"
-        title="Mathematics made accessible, structured, and useful."
-        intro="My teaching emphasizes clear reasoning, active participation, and connections between mathematical ideas and the problems students care about."
-      />
-      <section className="page-content section-shell">
-        <div className="teaching-layout">
-          <div className="teaching-stat">
-            <strong>16</strong>
-            <span>undergraduate sections as Instructor of Record at UTK</span>
-            <p>Graduate Teaching Associate · August 2022–Present</p>
-          </div>
-          <div className="course-list">
-            {teachingGroups.map((course) => (
-              <article className="course" key={course.course}>
-                <span>{course.course}</span>
-                <div><h2>{course.name}</h2><p>{course.terms}</p></div>
-              </article>
-            ))}
-          </div>
-        </div>
-        <div className="experience-list">
-          <article><span>2021–2022</span><div><h2>Graduate Teaching Assistant</h2><p>University of Tennessee, Knoxville · Basic Calculus and College Algebra</p></div></article>
-          <article><span>2020–2021</span><div><h2>Lecturer</h2><p>Ahsanullah University of Science and Technology · Calculus I and Differential Equations</p></div></article>
-          <article><span>2013–2019</span><div><h2>Trainer and Mentor</h2><p>Bangladesh Mathematical Olympiad Committee</p></div></article>
+      <section className="compact-page-header section-shell">
+        <p className="eyebrow">02 · Teaching</p>
+        <h1>Teaching Experience</h1>
+      </section>
+
+      <section className="compact-page-content section-shell">
+        <div className="teaching-experience-grid">
+          <article className="teaching-role teaching-role-wide">
+            <header>
+              <div>
+                <h2>Graduate Teaching Associate</h2>
+                <p>University of Tennessee, Knoxville · Knoxville, USA</p>
+              </div>
+              <span>Aug 2022–Present</span>
+            </header>
+            <p className="role-label">Instructor of Record</p>
+            <ul className="compact-course-list">
+              {instructorCourses.map(([course, term]) => (
+                <li key={`${course}-${term}`}>
+                  <strong>{course}</strong>
+                  <span>{term}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+
+          <article className="teaching-role">
+            <header>
+              <div><h2>Graduate Teaching Assistant</h2><p>University of Tennessee, Knoxville · Knoxville, USA</p></div>
+              <span>Aug 2021–July 2022</span>
+            </header>
+            <ul className="compact-course-list compact-course-list-single">
+              <li><strong>MATH 125 · Basic Calculus</strong><span>Spring 2022</span></li>
+              <li><strong>MATH 119 · College Algebra</strong><span>Fall 2021</span></li>
+            </ul>
+          </article>
+
+          <article className="teaching-role">
+            <header>
+              <div><h2>Lecturer</h2><p>Ahsanullah University of Science and Technology · Dhaka, Bangladesh</p></div>
+              <span>Dec 2020–June 2021</span>
+            </header>
+            <ul className="compact-course-list compact-course-list-single">
+              <li><strong>MATH 1107 · Calculus I</strong><span>3 sections</span></li>
+              <li><strong>MATH 0231 · Differential Equations</strong><span>2 sections</span></li>
+            </ul>
+          </article>
+
+          <article className="teaching-role">
+            <header>
+              <div><h2>Trainer</h2><p>Bangladesh Mathematical Olympiad Committee · Bangladesh</p></div>
+              <span>2016–2019</span>
+            </header>
+            <p className="role-description">Led Number Theory and Combinatorics sessions; supervised national mathematics Olympiads.</p>
+          </article>
+
+          <article className="teaching-role">
+            <header>
+              <div><h2>Mentor</h2><p>Bangladesh Mathematical Olympiad Committee · Bangladesh</p></div>
+              <span>2013–2016</span>
+            </header>
+            <p className="role-description">Trained participants, created problems, graded scripts, and supervised divisional Olympiads.</p>
+          </article>
         </div>
       </section>
       <SiteFooter />

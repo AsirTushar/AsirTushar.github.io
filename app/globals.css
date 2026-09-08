@@ -636,6 +636,100 @@ a { color: inherit; text-decoration: none; }
 }
 .page-content { padding-block: clamp(64px, 8vw, 110px) clamp(90px, 10vw, 142px); }
 
+.compact-page-header {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.34fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+  padding-block: 28px;
+  border-bottom: 1px solid var(--line);
+}
+.compact-page-header .eyebrow { margin: 0; }
+.compact-page-header h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+.compact-page-content { padding-block: 28px 68px; }
+
+.teaching-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+.teaching-role {
+  padding: 16px 18px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--white);
+}
+.teaching-role-wide { grid-column: 1 / -1; }
+.teaching-role header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+.teaching-role h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.teaching-role header p {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.4;
+}
+.teaching-role header > span {
+  color: var(--orange);
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.role-label {
+  margin: 12px 0 6px;
+  color: var(--blue);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.compact-course-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+.compact-course-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 7px 10px 7px 0;
+  border-bottom: 1px solid var(--line);
+}
+.compact-course-list strong { font-size: 10px; line-height: 1.35; }
+.compact-course-list span { color: var(--muted); font-size: 9px; line-height: 1.35; }
+.compact-course-list-single {
+  grid-template-columns: 1fr;
+  margin-top: 10px;
+}
+.role-description {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
 .project-hero {
   padding-block: clamp(70px, 8vw, 112px) clamp(58px, 7vw, 84px);
   border-bottom: 1px solid var(--line);
@@ -783,6 +877,44 @@ a { color: inherit; text-decoration: none; }
   gap: clamp(42px, 7vw, 96px);
   align-items: start;
 }
+.cv-page .cv-layout { gap: 32px; }
+.cv-page .cv-download-card {
+  min-height: 270px;
+  padding: 24px;
+}
+.cv-page .cv-download-card > svg { width: 26px; height: 26px; }
+.cv-page .cv-download-card .card-kicker { margin-top: 18px; }
+.cv-page .cv-download-card h2 {
+  font-size: 24px;
+  letter-spacing: -0.025em;
+}
+.cv-page .cv-download-card p:not(.card-kicker) {
+  margin: 12px 0 20px;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.cv-page .cv-download-card .button { font-size: 11px; }
+.cv-page .cv-highlights article {
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 14px;
+  padding: 17px 0;
+}
+.cv-page .cv-highlights article > span { font-size: 14px; }
+.cv-page .cv-highlights article p:first-child {
+  margin: 1px 0 5px;
+  font-size: 9px;
+}
+.cv-page .cv-highlights h2 {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+.cv-page .cv-highlights article p:last-child {
+  margin: 5px 0 0;
+  font-size: 10px;
+  line-height: 1.45;
+}
 .cv-download-card {
   position: sticky;
   top: 112px;
@@ -846,13 +978,28 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.65;
 }
 
-.talks-page .page-content {
+.talks-page .compact-page-content {
   width: 100%;
   max-width: none;
+  padding-block: 28px 64px;
   padding-inline: max(24px, calc((100vw - 1180px) / 2));
   background: var(--ink);
   color: var(--white);
 }
+.talks-page .talk-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-left: 1px solid rgba(255, 255, 255, 0.22);
+}
+.talks-page .talk {
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 12px;
+  padding: 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.22);
+}
+.talks-page .talk > span { font-size: 10px; }
+.talks-page .talk h2 { font-size: 15px; line-height: 1.4; }
+.talks-page .talk p { margin-top: 6px; font-size: 10px; line-height: 1.45; }
 
 @media (max-width: 960px) {
   .site-header { align-items: flex-start; flex-direction: column; gap: 0; padding: 14px 24px 0; }
@@ -871,6 +1018,7 @@ a { color: inherit; text-decoration: none; }
   .footer-inner { grid-template-columns: 1fr; }
   .teaching-stat { position: static; }
   .cv-download-card { position: static; min-height: 390px; }
+  .cv-page .cv-download-card { min-height: 250px; }
   .teaching-history { max-width: none; padding-left: 0; }
 }
 
@@ -908,6 +1056,12 @@ a { color: inherit; text-decoration: none; }
   .page-intro { grid-template-columns: 1fr; gap: 18px; }
   .page-intro .eyebrow { margin: 0; }
   .page-intro > p:last-child { grid-column: 1; }
+  .compact-page-header { grid-template-columns: 1fr; gap: 8px; }
+  .teaching-experience-grid,
+  .talks-page .talk-list { grid-template-columns: 1fr; }
+  .teaching-role-wide { grid-column: auto; }
+  .teaching-role header { flex-direction: column; gap: 5px; }
+  .compact-course-list { grid-template-columns: 1fr; }
   .experience-list article { grid-template-columns: 1fr; gap: 10px; }
   .publication { grid-template-columns: 38px 1fr; gap: 14px; }
   .publication-link { grid-column: 2; justify-self: start; }
