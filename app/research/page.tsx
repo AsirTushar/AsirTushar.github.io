@@ -36,7 +36,7 @@ const projects = [
 
 export default function Research() {
   return (
-    <main>
+    <main className="research-page">
       <SiteHeader current="research" />
       <section className="research-overview section-shell">
         <p className="eyebrow">01 · Research</p>
@@ -47,10 +47,7 @@ export default function Research() {
       </section>
       <section className="page-content section-shell">
         <section className="project-index" aria-labelledby="projects-title">
-          <div className="subsection-heading">
-            <p className="eyebrow">Projects</p>
-            <h2 id="projects-title">Current and previous research.</h2>
-          </div>
+          <h2 className="project-index-title" id="projects-title">Projects</h2>
           <div className="project-list">
             {projects.map((project) => (
               <a className="project-card-link" href={project.href} key={project.number}>
