@@ -697,7 +697,7 @@ a { color: inherit; text-decoration: none; }
 .outreach-list {
   margin: 0;
   padding: 0;
-  border-top: 1px solid var(--line);
+  border: 0;
   list-style: none;
 }
 .teaching-list li {
@@ -706,7 +706,7 @@ a { color: inherit; text-decoration: none; }
   gap: 16px;
   align-items: baseline;
   padding: 7px 0;
-  border-bottom: 1px solid var(--line);
+  border: 0;
   font-size: 11px;
   line-height: 1.4;
 }
@@ -718,7 +718,7 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: 105px minmax(0, 1fr);
   gap: 16px;
   padding: 9px 0;
-  border-bottom: 1px solid var(--line);
+  border: 0;
   font-size: 11px;
   line-height: 1.45;
 }
@@ -1062,17 +1062,19 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: 1fr;
   max-width: 980px;
   margin: 0 auto;
-  border-left: 1px solid rgba(255, 255, 255, 0.22);
+  border: 0;
 }
 .talks-page .talk {
   grid-template-columns: 110px minmax(0, 1fr);
   gap: 20px;
   padding: 14px 18px;
-  border-right: 1px solid rgba(255, 255, 255, 0.22);
+  border: 0;
 }
 .talks-page .talk > span { font-size: 10px; }
 .talks-page .talk h2 { font-size: 15px; line-height: 1.4; }
 .talks-page .talk p { margin-top: 6px; font-size: 10px; line-height: 1.45; }
+.teaching-page .compact-page-header,
+.talks-page .compact-page-header { border-bottom: 0; }
 
 @media (max-width: 960px) {
   .site-header { align-items: flex-start; flex-direction: column; gap: 0; padding: 14px 24px 0; }
