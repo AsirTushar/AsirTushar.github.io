@@ -8,14 +8,12 @@ export function ProjectLayout({
   summary,
   themes,
   children,
-  output,
 }: {
   number: string;
   title: string;
   summary: string;
   themes: string[];
   children: ReactNode;
-  output: ReactNode;
 }) {
   return (
     <main>
@@ -36,10 +34,6 @@ export function ProjectLayout({
             <ul>
               {themes.map((theme) => <li key={theme}>{theme}</li>)}
             </ul>
-          </div>
-          <div>
-            <span>Related output</span>
-            {output}
           </div>
         </aside>
       </section>
