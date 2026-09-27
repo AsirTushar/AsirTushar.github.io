@@ -52,7 +52,7 @@ export default function Research() {
     </div>
 
     <div>
-      <h2>Computational Mathematics</h2>
+      <h2>Applied Mathematics</h2>
       <ul>
         <li>Numerical Analysis and PDEs</li>
         <li>Mathematical Biology</li>
