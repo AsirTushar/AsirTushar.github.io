@@ -13,7 +13,7 @@ export default function Home() {
           <h1>
             Asir Intesar
             <br />
-            <em>Tushar <small lang="bn">(তুষার)</small></em>
+            Tushar <small lang="bn">(তুষার)</small>
           </h1>
           <p className="hero-role">
             Ph.D. Candidate in Mathematics
