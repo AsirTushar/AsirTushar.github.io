@@ -21,7 +21,8 @@ export default function BlackScholesProject() {
         Allowing volatility to vary with the option value or its derivatives
         leads to nonlinear pricing equations that generally require numerical
         approximation.
-      <p>
+      </p>
+       <p>
         This project investigated numerical solutions of a nonlinear
         Black-Scholes model for European options under several volatility
         specifications. The work examined how the nonlinear volatility term
