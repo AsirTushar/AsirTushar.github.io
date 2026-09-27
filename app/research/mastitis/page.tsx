@@ -12,7 +12,7 @@ export default function MastitisProject() {
       number="02"
       title="Bayesian nonparametric modeling for dairy-cow health"
       summary="Probabilistic learning from longitudinal sensor measurements for mastitis detection in precision livestock farming."
-      themes={["Bayesian nonparametrics", "Latent-state modeling", "Statistical classification", "Precision livestock farming"]}
+      themes={["Bayesian nonparametrics", "Hidden Markov model", "Statistical classification", "Precision livestock farming"]}
     >
       <h2>Project overview</h2>
       <p>
@@ -23,26 +23,10 @@ export default function MastitisProject() {
         dependent, and often highly variable across animals.
       </p>
       <p>
-        This collaborative project develops Bayesian probabilistic
-        classification methods for distinguishing healthy and mastitis-related
+        This collaborative project develops Bayesian classification methods for distinguishing healthy and mastitis-related
         patterns in longitudinal sensor data. The model uses latent health
         states to represent changing animal conditions while accounting for
         uncertainty in both the observations and the classification.
-      </p>
-      <h2>Model formulation</h2>
-      <p>
-        A simplified latent-state representation lets the unobserved health
-        state evolve over time and links each state to the observed sensor
-        measurements:
-      </p>
-      <div className="equation-block equation-pair" aria-label="Latent health state model and observation model">
-        <span><em>z</em><sub>t</sub> | <em>z</em><sub>t−1</sub> ∼ Categorical(π<sub><em>z</em><sub>t−1</sub></sub>),</span>
-        <span><em>y</em><sub>t</sub> | <em>z</em><sub>t</sub> = <em>k</em> ∼ N(μ<sub>k</sub>, Σ<sub>k</sub>).</span>
-      </div>
-      <p>
-        A Bayesian nonparametric formulation allows the effective number and
-        structure of the latent patterns to be learned from the data rather
-        than fixed in advance.
       </p>
       <h2>Research goal</h2>
       <p>
