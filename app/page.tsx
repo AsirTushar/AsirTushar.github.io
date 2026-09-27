@@ -40,16 +40,16 @@ export default function Home() {
           </p>
           <p className="hero-intro">
             My academic interests lie broadly at the intersection of Bayesian
-            statistics, statistical learning, scientific computing, and numerical analysis.
-            I am interested
-            in developing statistical and computational methods for learning
-            from complex and uncertain data, with applications across science
-            and engineering. Alongside my research, I have extensive experience
-            teaching undergraduate mathematics and enjoy supporting students in
-            developing confidence and strong mathematical reasoning. Before
-            beginning my doctoral studies at UTK, I earned both my B.S. and M.S.
-            in Mathematics from the University of Dhaka and served as a Lecturer
-            at Ahsanullah University of Science and Technology. Outside of academics, I enjoy playing football (soccer) and table tennis, as well as hiking.
+            statistics, statistical learning, scientific computing, and 
+            numerical analysis. I am interested in developing statistical and 
+            computational methods for learning from complex and uncertain data, 
+            with applications across science and engineering. Alongside my research, 
+            I have extensive experience teaching undergraduate mathematics and 
+            enjoy supporting students in developing confidence and strong mathematical 
+            reasoning. Before beginning my doctoral studies at UTK, I earned both my B.S.
+            and M.S. in Mathematics from the University of Dhaka and served as a Lecturer
+            at Ahsanullah University of Science and Technology. Outside of academics, 
+            I enjoy playing football (soccer) and table tennis, as well as hiking.
           </p>
           <p className="job-market-note">
             I am currently on the academic job market and seeking postdoctoral
