@@ -29,19 +29,7 @@ export default function PointCloudProject() {
         Tailored Markov chain Monte Carlo algorithms explore the resulting
         posterior distribution.
       </p>
-      <h2>Model formulation</h2>
-      <p>
-        Let <em>h</em><sup>s</sup> denote the vertices of a polygonal curve. An
-        observation assigned to segment <em>s</em><sub>n</sub> is represented by
-        a location <em>u</em><sub>n</sub> along that segment:
-      </p>
-      <div className="equation-block" aria-label="Curve point r sub s n u n equals h superscript s n plus u n times h superscript s n plus one minus h superscript s n">
-        <em>r</em><sub>s<sub>n</sub>,u<sub>n</sub></sub> = <em>h</em><sup>s<sub>n</sub></sup> + <em>u</em><sub>n</sub>(<em>h</em><sup>s<sub>n</sub>+1</sup> − <em>h</em><sup>s<sub>n</sub></sup>).
-      </div>
-      <p>The corresponding observation model can be written as</p>
-      <div className="equation-block" aria-label="w n conditional on s n u n h and tau follows a two dimensional normal distribution">
-        <em>w</em><sub>n</sub> | <em>s</em><sub>n</sub>, <em>u</em><sub>n</sub>, <em>h</em>, τ ∼ N<sub>2</sub>(<em>r</em><sub>s<sub>n</sub>,u<sub>n</sub></sub>, I<sub>2</sub>/τ).
-      </div>
+
       <h2>Why the Bayesian approach matters</h2>
       <p>
         Instead of returning only one reconstructed curve, the method produces
