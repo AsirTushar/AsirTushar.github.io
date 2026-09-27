@@ -41,9 +41,26 @@ export default function Research() {
       <section className="research-overview section-shell">
         <p className="eyebrow">01 · Research</p>
         <div className="research-overview-copy">
-          <h1>My work connects Bayesian modeling, computational statistics, and scientific applications where the underlying structure is only partially observed.</h1>
-          <p><strong>Research interests:</strong> Bayesian statistics · Statistical learning · Markov chain Monte Carlo · Data analysis · Uncertainty quantification · Bayesian nonparametrics</p>
-        </div>
+  <div className="research-interest-groups">
+    <div>
+      <h2>Statistical Inference</h2>
+      <ul>
+        <li>Bayesian Statistics</li>
+        <li>Statistical Learning</li>
+        <li>Uncertainty Quantification</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Computational Mathematics</h2>
+      <ul>
+        <li>Numerical Analysis and PDEs</li>
+        <li>Mathematical Biology</li>
+      </ul>
+    </div>
+  </div>
+</div>
+   
       </section>
       <section className="page-content section-shell">
         <section className="project-index" aria-labelledby="projects-title">
