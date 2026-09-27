@@ -1154,3 +1154,21 @@ a { color: inherit; text-decoration: none; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; }
 }
+
+/* Left-align the Research interests section */
+.research-overview {
+  display: block;
+}
+
+.research-overview > .eyebrow {
+  margin: 0 0 18px;
+}
+
+.research-overview-copy {
+  width: 100%;
+  max-width: 700px;
+}
+
+.research-interest-groups {
+  margin-left: 0;
+}
