@@ -7,12 +7,12 @@ export const metadata: Metadata = {
 };
 
 const talks = [
-  { date: "2026", title: "Bayesian Methods and Markov Chain Monte Carlo Algorithms for Curve Reconstruction and Point Cloud Analysis", venue: "SIAM Annual Meeting · Cleveland, Ohio" },
-  { date: "2026", title: "Markov Chain Monte Carlo Algorithms for Curve Reconstruction and Point Cloud Analysis", venue: "SIAM Graduate Student Research Showcase · Knoxville, Tennessee" },
+  { date: "July 2026", title: "Bayesian Methods and Markov Chain Monte Carlo Algorithms for Curve Reconstruction and Point Cloud Analysis", venue: "SIAM Annual Meeting · Cleveland, Ohio" },
+  { date: "March 2026", title: "Markov Chain Monte Carlo Algorithms for Curve Reconstruction and Point Cloud Analysis", venue: "SIAM Graduate Student Research Showcase · Knoxville, Tennessee" },
   { date: "March 2026", title: "Efficient Bayesian Methods for Curve Reconstruction and Point Cloud Analysis", venue: "51st Annual New York State Regional Graduate Mathematics Conference · Syracuse University · Syracuse, New York" },
-  { date: "2024", title: "Computational Modeling and Statistical Learning of Point Cloud Data for LiDAR Applications", venue: "Oral Specialty Examination · University of Tennessee, Knoxville" },
-  { date: "2019", title: "Numerical Investigation of the Black–Scholes Equation", venue: "University of Dhaka" },
-  { date: "2018", title: "Mercury’s Perihelion Precession: A Classical Test of General Relativity", venue: "University of Dhaka" },
+  { date: "December 2024", title: "Computational Modeling and Statistical Learning of Point Cloud Data for LiDAR Applications", venue: "Oral Specialty Examination · University of Tennessee, Knoxville" },
+  { date: "November 2019", title: "Numerical Investigation of the Black–Scholes Equation", venue: "University of Dhaka" },
+  { date: "September 2018", title: "Mercury’s Perihelion Precession: A Classical Test of General Relativity", venue: "University of Dhaka" },
 ];
 
 export default function Talks() {
