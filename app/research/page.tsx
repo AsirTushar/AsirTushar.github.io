@@ -22,7 +22,7 @@ const projects = [
     summary:
       "Probabilistic classification of longitudinal sensor data for mastitis detection in precision livestock farming.",
     href: "/research/mastitis/",
-    areas: "Bayesian nonparametrics · Classification · Animal health",
+    areas: "Bayesian nonparametrics · Hidden Markov model · Classification · Animal health",
   },
   {
     number: "03",
@@ -30,7 +30,7 @@ const projects = [
     summary:
       "Numerical approximation of a nonlinear option-pricing model under varying volatility specifications.",
     href: "/research/black-scholes/",
-    areas: "Numerical analysis · Mathematical finance · Differential equations",
+    areas: "Numerical analysis · Mathematical finance · Partial differential equations",
   },
 ];
 
