@@ -29,16 +29,6 @@ export default function PointCloudProject() {
         Tailored Markov chain Monte Carlo algorithms explore the resulting
         posterior distribution.
       </p>
-
-      <h2>Why the Bayesian approach matters</h2>
-      <p>
-        Instead of returning only one reconstructed curve, the method produces
-        posterior samples that describe plausible geometries. These samples make
-        it possible to identify regions where the curve is well determined and
-        regions where sparse or noisy observations create substantial
-        uncertainty. Current directions include extensions to three-dimensional
-        curves and applications involving LiDAR-derived point clouds.
-      </p>
       <h2>Related preprint</h2>
       <div className="project-paper">
         <p className="paper-status">Preprint · 2026</p>
